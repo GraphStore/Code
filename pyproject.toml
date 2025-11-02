@@ -1,0 +1,17 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphstore-icde"
+version = "0.3.0"
+description = "GraphStore ETG lifecycle expanded heavy build"
+authors = [{name = "Anonymous"}]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["numpy","torch","sqlite-utils"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["graphstore*"]
